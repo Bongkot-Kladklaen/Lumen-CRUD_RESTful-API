@@ -90,6 +90,7 @@ curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/
 ## Show specified product
 ### Request
 `GET /api/v1/productID/{id}`
+`Parameters : {id}=[integer] the ID of the product on the server.`
 ```ZSH
 curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/productID/1'
 ```
