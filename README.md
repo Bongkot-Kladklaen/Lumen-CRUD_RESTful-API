@@ -1,6 +1,9 @@
 # Products CRUD REST API
 >This projects using [Lumen micro-framework by Laravel](https://lumen.laravel.com/) create web service and so JSON responses data
 
+Where full URLs are provided in responses they will be rendered as if service is running on https://products-crud-lumen.herokuapp.com
+
+
 ## Response Codes
 ### Response Codes
 ```HTTP
@@ -36,14 +39,13 @@ These can be used like this
 
 | resource      | description                       |
 |:--------------|:----------------------------------|
-| `/products`      | returns a list of all products
-| `/productID/{id}`    | returns product for the specified `id`
+| `/products`      | returns a list of all products |
+| `/productID/{id}`    | returns product for the specified `id` |
 | `/productInsert` | create a new product |
 | `/productUpdate/{id}`      | update product for the specified `id`  |
 | `/productDelete/{id}`  |  delete product for the specified `id` |  
 
 # REST API
-Where full URLs are provided in responses they will be rendered as if service is running on https://products-crud-lumen.herokuapp.com
 The REST API to the example app is described below.
 
 ## Show product all
