@@ -39,11 +39,11 @@ These can be used like this
 
 | resource      | description                       |
 |:--------------|:----------------------------------|
-| /products | returns a list of all products |
-| /productID/{id} | returns product for the specified id |
-| /productInsert | create a new product |
-| /productUpdate/{id} | update product for the specified id |
-| /productDelete/{id} |  delete product for the specified id |  
+| `/products` | returns a list of all products |
+| `/productID/{id}` | returns product for the specified id |
+| `/productInsert` | create a new product |
+| `/productUpdate/{id}` | update product for the specified id |
+| `/productDelete/{id}` |  delete product for the specified id |  
 
 # REST API
 The REST API to the example app is described below.
