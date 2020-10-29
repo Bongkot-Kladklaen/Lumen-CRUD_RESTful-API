@@ -51,7 +51,7 @@ The REST API to the example app is described below.
 ## Show product all
 ### Request
 `GET /api/v1/products`
-```PHP
+```ZSH
 curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/products'
 ```
 ### Response
@@ -84,5 +84,26 @@ curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/
             "thumbnail": null
         }
     ]
+}
+```
+
+## Show specified product
+### Request
+`GET /api/v1/productID/{id}`
+```ZSH
+curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/productID/1'
+```
+### Response
+```JSON
+{
+    "status": "success",
+    "data": {
+        "id": 1,
+        "product_category": null,
+        "product_name": "Latta",
+        "product_detail": "Latta",
+        "unit_price": "50",
+        "thumbnail": null
+    }
 }
 ```
