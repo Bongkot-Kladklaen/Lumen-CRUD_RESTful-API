@@ -48,6 +48,8 @@ The REST API to the example app is described below.
 
 Full URLs service is running on https://products-crud-lumen.herokuapp.com
 
+You can use [POSTMAN](https://www.postman.com/) to test the API, but the examples in this project use [cURL](https://curl.haxx.se/) to describe them.
+
 ## `GET` Show product all
 ### Request
 `GET /api/v1/products`
