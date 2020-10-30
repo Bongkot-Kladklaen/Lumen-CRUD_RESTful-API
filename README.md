@@ -41,8 +41,8 @@ These can be used like this
 |:--------------|:----------------------------------|
 | `/products` | returns a list of all products |
 | `/productID/{id}` | returns product for the specified id |
-| `/productInsert` | create a new product |
-| `/productUpdate/{id}` | update product for the specified id |
+| `/productInsert` | create a new product and send request body data |
+| `/productUpdate/{id}` | update product for the specified id and request body data |
 | `/productDelete/{id}` |  delete product for the specified id |  
 
 # REST API
