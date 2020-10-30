@@ -1,6 +1,13 @@
 # Products CRUD REST API
 >This projects using [Lumen micro-framework by Laravel](https://lumen.laravel.com/) create web service and so JSON responses data
 
+### Services
+
+* Get products
+* Create product
+* Update product
+* Delete product
+
 ## Response Codes
 ### Response Codes
 ```HTTP
@@ -32,8 +39,8 @@ These can be used like this
 |:--------------|:----------------------------------|
 | `/products` | returns a list of all products |
 | `/productID/{id}` | returns product for the specified id |
-| `/productInsert` | create a new product and send request body data |
-| `/productUpdate/{id}` | update product for the specified id and request body data |
+| `/productInsert` | create a new product|
+| `/productUpdate/{id}` | update product for the specified id |
 | `/productDelete/{id}` |  delete product for the specified id |  
 
 # REST API
