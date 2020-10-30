@@ -109,3 +109,103 @@ curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/
     }
 }
 ```
+
+## Create product
+### Request
+`PUT /api/v1/productInsert`
+
+`Request Body :`
+
+```JSON
+{
+    "product_category": "value"=[Int],
+    "product_name": "value"=[String],
+    "product_detail": "value"=[String],
+    "unit_price": "value"=[String],
+    "thumbnail": "value"=[String]
+}
+```
+```ZSH
+curl --location --request POST 'https://products-crud-lumen.herokuapp.com/api/v1/productInsert' \
+--data-raw '{
+    "product_category": null,
+    "product_name": "Americano",
+    "product_detail": "Americano",
+    "unit_price": "60",
+    "thumbnail": null
+}'
+```
+### Response
+```JSON
+{
+    "status": "success",
+    "data": {
+        "product_category": null,
+        "product_name": "Americano",
+        "product_detail": "Americano",
+        "unit_price": "60",
+        "thumbnail": null,
+        "id": 31
+    }
+}
+```
+
+## Delete specified product
+### Request
+`DELETE /api/v1/productDelete/{id}`
+
+`Parameters : {id}=[integer] the ID of the product on the server.`
+```ZSH
+curl --location --request DELETE 'https://products-crud-lumen.herokuapp.com/api/v1/productDelete/41'
+```
+### Response
+```JSON
+{
+    "status": "success",
+    "data": {
+        "deleteId": "41"
+    }
+}
+```
+
+## Update specified product
+### Request
+`PUT /api/v1/productUpdate/{id}`
+
+`Parameters : {id}=[integer] the ID of the product on the server.`
+
+`Request Body :`
+
+```JSON
+{
+    "product_category": "value"=[Int],
+    "product_name": "value"=[String],
+    "product_detail": "value"=[String],
+    "unit_price": "value"=[String],
+    "thumbnail": "value"=[String]
+}
+```
+```ZSH
+curl --location --request PUT 'https://products-crud-lumen.herokuapp.com/api/v1/productUpdate/1' \
+--data-raw '{
+    "product_category": null,
+    "product_name": "Americano",
+    "product_detail": "Americano",
+    "unit_price": "60",
+    "thumbnail": null
+}'
+```
+### Response
+```JSON
+{
+    "status": "success",
+    "data": {
+        "id": 1,
+        "product_category": null,
+        "product_name": "Americano",
+        "product_detail": "Americano",
+        "unit_price": "60",
+        "thumbnail": null
+    }
+}
+```
