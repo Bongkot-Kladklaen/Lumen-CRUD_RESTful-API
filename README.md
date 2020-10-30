@@ -118,11 +118,11 @@ curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/
 
 ```JSON
 {
-    "product_category": "value"=[Int],
-    "product_name": "value"=[String],
-    "product_detail": "value"=[String],
-    "unit_price": "value"=[String],
-    "thumbnail": "value"=[String]
+    "product_category": "value=[Int]",
+    "product_name": "value=[Int]",
+    "product_detail": "value=[Int]",
+    "unit_price": "value=[Int]",
+    "thumbnail": "value=[Int]"
 }
 ```
 ```ZSH
@@ -149,7 +149,7 @@ curl --location --request POST 'https://products-crud-lumen.herokuapp.com/api/v1
     }
 }
 ```
-## `PUT`</span>` Update specified product
+## `PUT` Update specified product
 ### Request
 `PUT /api/v1/productUpdate/{id}`
 
@@ -159,11 +159,11 @@ curl --location --request POST 'https://products-crud-lumen.herokuapp.com/api/v1
 
 ```JSON
 {
-    "product_category": "value"=[Int],
-    "product_name": "value"=[String],
-    "product_detail": "value"=[String],
-    "unit_price": "value"=[String],
-    "thumbnail": "value"=[String]
+    "product_category": "value=[Int]",
+    "product_name": "value=[Int]",
+    "product_detail": "value=[Int]",
+    "unit_price": "value=[Int]",
+    "thumbnail": "value=[Int]"
 }
 ```
 ```ZSH
