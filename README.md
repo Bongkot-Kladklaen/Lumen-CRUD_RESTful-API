@@ -209,3 +209,6 @@ curl --location --request DELETE 'https://products-crud-lumen.herokuapp.com/api/
 }
 ```
 
+## LICENSE
+[MIT](LICENSE)
+
