@@ -1,9 +1,6 @@
 # Products CRUD REST API
 >This projects using [Lumen micro-framework by Laravel](https://lumen.laravel.com/) create web service and so JSON responses data
 
-Where full URLs are provided in responses they will be rendered as if service is running on https://products-crud-lumen.herokuapp.com
-
-
 ## Response Codes
 ### Response Codes
 ```HTTP
@@ -29,12 +26,6 @@ Where full URLs are provided in responses they will be rendered as if service is
 ## Resource components
 Major resource components supported by the Products CRUD API are:
 
-- products
-- productID
-- productInsert
-- productUpdate
-- productDelete
-
 These can be used like this
 
 | resource      | description                       |
@@ -47,6 +38,8 @@ These can be used like this
 
 # REST API
 The REST API to the example app is described below.
+
+Full URLs service is running on https://products-crud-lumen.herokuapp.com
 
 ## Show product all
 ### Request
