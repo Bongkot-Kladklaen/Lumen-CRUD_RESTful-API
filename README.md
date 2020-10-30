@@ -48,7 +48,7 @@ The REST API to the example app is described below.
 
 Full URLs service is running on https://products-crud-lumen.herokuapp.com
 
-## <span style="color:#249c47;">GET</span> Show product all
+## `GET` Show product all
 ### Request
 `GET /api/v1/products`
 ```ZSH
@@ -87,7 +87,7 @@ curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/
 }
 ```
 
-## <span style="color:#249c47;">GET</span> Show specified product
+## `GET` Show specified product
 ### Request
 `GET /api/v1/productID/{id}`
 
@@ -110,7 +110,7 @@ curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/
 }
 ```
 
-## <span style="color:#ffb400;">POST</span> Create a new product
+## `POST` Create a new product
 ### Request
 `POST /api/v1/productInsert`
 
@@ -149,7 +149,7 @@ curl --location --request POST 'https://products-crud-lumen.herokuapp.com/api/v1
     }
 }
 ```
-## <span style="color:#097bed;">PUT</span> Update specified product
+## `PUT`</span>` Update specified product
 ### Request
 `PUT /api/v1/productUpdate/{id}`
 
@@ -191,7 +191,7 @@ curl --location --request PUT 'https://products-crud-lumen.herokuapp.com/api/v1/
 }
 ```
 
-## <span style="color:#eb2013;">DELETE</span> Delete specified product
+## `DELETE` Delete specified product
 ### Request
 `DELETE /api/v1/productDelete/{id}`
 
