@@ -48,7 +48,7 @@ The REST API to the example app is described below.
 
 Full URLs service is running on https://products-crud-lumen.herokuapp.com
 
-## Show product all
+## <span style="color:#249c47;">GET</span> Show product all
 ### Request
 `GET /api/v1/products`
 ```ZSH
@@ -87,7 +87,7 @@ curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/
 }
 ```
 
-## Show specified product
+## <span style="color:#249c47;">GET</span> Show specified product
 ### Request
 `GET /api/v1/productID/{id}`
 
@@ -110,9 +110,9 @@ curl --location --request GET 'https://products-crud-lumen.herokuapp.com/api/v1/
 }
 ```
 
-## Create product
+## <span style="color:#ffb400;">POST</span> Create a new product
 ### Request
-`PUT /api/v1/productInsert`
+`POST /api/v1/productInsert`
 
 `Request Body :`
 
@@ -149,26 +149,7 @@ curl --location --request POST 'https://products-crud-lumen.herokuapp.com/api/v1
     }
 }
 ```
-
-## Delete specified product
-### Request
-`DELETE /api/v1/productDelete/{id}`
-
-`Parameters : {id}=[integer] the ID of the product on the server.`
-```ZSH
-curl --location --request DELETE 'https://products-crud-lumen.herokuapp.com/api/v1/productDelete/41'
-```
-### Response
-```JSON
-{
-    "status": "success",
-    "data": {
-        "deleteId": "41"
-    }
-}
-```
-
-## Update specified product
+## <span style="color:#097bed;">PUT</span> Update specified product
 ### Request
 `PUT /api/v1/productUpdate/{id}`
 
@@ -209,3 +190,22 @@ curl --location --request PUT 'https://products-crud-lumen.herokuapp.com/api/v1/
     }
 }
 ```
+
+## <span style="color:#eb2013;">DELETE</span> Delete specified product
+### Request
+`DELETE /api/v1/productDelete/{id}`
+
+`Parameters : {id}=[integer] the ID of the product on the server.`
+```ZSH
+curl --location --request DELETE 'https://products-crud-lumen.herokuapp.com/api/v1/productDelete/41'
+```
+### Response
+```JSON
+{
+    "status": "success",
+    "data": {
+        "deleteId": "41"
+    }
+}
+```
+
